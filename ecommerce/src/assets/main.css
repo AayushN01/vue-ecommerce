@@ -49,6 +49,18 @@ p{
 .mt-10{
   margin-top: 10px;
 }
+
+.text-center{
+  text-align: center;
+}
+
+.btn-primary{
+  background-color: var(--btn-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 body{
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -149,13 +161,14 @@ nav .navbar-cart span{
   background-color: #dfdfdf;
   background: #dfdfdf;
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 45% auto;
   padding: 50px 0;
 }
 
 .heroSection .hero-imageSide img{
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .heroSection .hero-contentSide{
@@ -163,6 +176,7 @@ nav .navbar-cart span{
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
+  padding: 40px 0;
 }
 
 .heroSection .hero-contentSide .upper-text h3{
@@ -200,4 +214,88 @@ nav .navbar-cart span{
   background-color: #fff;
   border: 1px solid var(--primary-color);
   color:var(--primary-color);
+}
+
+.section-title-padding{
+  padding: 50px 0;
+}
+
+/* PRODUCT SECTION */
+.section-padding{
+  padding: 30px 0;
+}
+.container{
+  padding: 0 40px;
+}
+.product-list{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+}
+
+.product-list .product-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.product-list .product-item .product-item-content{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-item-img img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-item .productPrice p{
+  font-size: 22px;
+}
+
+.product-item .product-item-content .product-item-btns{
+  padding: 10px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.sectionBtn{
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sectionBtn .btn-primary {
+  width: 200px;
+  padding: 12px;
+  border: none;
+  text-align: center;
+  transition: 0.3s all ease-in;
+  cursor: pointer;
+}
+
+.sectionBtn .btn-primary:hover{
+  background-color: #fff;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  cursor: pointer;
+}
+
+.btn{
+  cursor:pointer;
+  transform: 0.3s all ease-in;
+  border: 1px solid var(--primary-color);
+
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
