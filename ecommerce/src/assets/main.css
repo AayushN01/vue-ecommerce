@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+}
+
+.topNavBar{
+  background-color: #1c355e;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.topNavBar .social-icons{
+  padding-left: 20px;
+}
+
+.topNavBar .social-icons ul,
+ .topNavBar .user-login ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.topNavBar .social-icons ul li a,
+.topNavBar .user-login ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+{
+
+}
