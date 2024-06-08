@@ -1,6 +1,7 @@
 :root{
   --primary-color: #1c355e;
   --text-color: #2d2d2d;
+  --btn-color: #1c355e;
 }
 
 *{
@@ -8,7 +9,46 @@
   padding: 0;
 }
 
+/* GLOBAL */
+h1,h2,h3,h4,h5,h6{
+  color: var(--text-color);
+}
+h1{
+  font-size: 48px;
+}
+h2{
+  font-size: 42px;
+}
+h3{
+  font-size: 36px;
+}
+h4{
+  font-size: 32px;
+}
+h4{
+  font-size: 28px;
+}
+h6{
+  font-size: 24px;
+}
+p{
+  font-size: 18px;
+}
 
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+.p-10{
+  padding: 10px;
+}
+.mt-10{
+  margin-top: 10px;
+}
 body{
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -102,4 +142,62 @@ nav .navbar-cart span{
   width: 15px;
   text-align: center;
   font-size: 12px;
+}
+
+/* HERO SECTION */
+.heroSection{
+  background-color: #dfdfdf;
+  background: #dfdfdf;
+  display: grid;
+  grid-template-columns: 40% auto;
+  padding: 50px 0;
+}
+
+.heroSection .hero-imageSide img{
+  width: 100%;
+  height: auto;
+}
+
+.heroSection .hero-contentSide{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.heroSection .hero-contentSide .upper-text h3{
+  font-size: 60px;
+}
+
+.heroSection .hero-contentSide .middle-text h4{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.heroSection .hero-contentSide .lower-text h5{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.heroSection .hero-contentSide .hero-btn{
+  width: 350px;
+  margin-left: 15px;
+}
+
+.heroSection .hero-contentSide .hero-btn .btn-primary{
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 170px;
+  height: 40px;
+  transition: 0.3s all ease-in;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.heroSection .hero-contentSide .hero-btn .btn-primary:hover{
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color:var(--primary-color);
 }
