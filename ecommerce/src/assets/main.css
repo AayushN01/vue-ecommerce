@@ -1,14 +1,21 @@
+:root{
+  --primary-color: #1c355e;
+  --text-color: #2d2d2d;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
+
 body{
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .topNavBar{
-  background-color: #1c355e;
+  background-color: var(--primary-color);
   display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -37,6 +44,62 @@ body{
   text-decoration: none;
 }
 
-{
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 100px;
+}
 
+nav .navbar-logo img{
+  height: 150px;
+}
+
+nav .navbar-menu .menuList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav .navbar-menu .menuList .menu-item{
+  padding: 10px;
+}
+
+nav .navbar-menu .menuList .menu-item a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--text-color);
+  transition: 0.1s all ease;
+}
+
+nav .navbar-menu .menuList .menu-item a:hover{
+  color: var(--primary-color);
+}
+
+nav .navbar-cart{
+  position: relative;
+  margin-right: 5px;
+}
+
+nav .navbar-cart a{
+  font-size: 20px;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+nav .navbar-cart span{
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+  color: #fff;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  font-size: 12px;
 }
